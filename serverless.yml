@@ -30,6 +30,11 @@ custom:
         WebsiteConfiguration:
           IndexDocument: index.html
           ErrorDocument: index.html
+        DistributionConfig:
+          Invalidations:
+            Quantity: 1 # specify the number of invalidations to create
+            Items:
+              - Path: /*
         # VersioningConfiguration:
         #   Status: Enabled
 
