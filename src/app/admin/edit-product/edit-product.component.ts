@@ -75,6 +75,7 @@ export class EditProductComponent implements OnInit, OnDestroy {
 
     this.productsService
       .getProductById(productId)
+
       .pipe(
         finalize(() => this.loaded$.next(true)),
         takeUntil(this.onDestroy$)
